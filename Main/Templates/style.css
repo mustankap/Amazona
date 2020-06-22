@@ -67,6 +67,7 @@ a:hover{
     display:flex;
     justify-content: center;
     align-items:center;
+    flex-wrap: wrap;
 }
 .product{
     display:flex;
@@ -98,4 +99,26 @@ a:hover{
 .product-price{
     font-size: 2rem;
     font-weight:bold;
+}
+.product-rating{
+margin-bottom: 1rem;
+}
+/*sidebar*/
+.brand button{
+    font-size: 3rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color:#ffffff;
+    cursor: pointer;
+}
+.sidebar{
+    position:fixed;
+    transform:translateX(-30rem);
+    width:30rem;
+    background-color: #c0c0c0;
+    height:100%;
+}
+.sidebar.open{
+    transform:translateX(0);
 }
