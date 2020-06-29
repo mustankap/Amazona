@@ -1,6 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import data from './data'
 import './App.css';
+import {BrowserRouter,Route,Link} from 'react-router-dom';
+import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen'; 
+
 
 function App() 
 {
@@ -12,13 +16,14 @@ function App()
     document.querySelector(".sidebar").classList.remove("open")
   }
   return (
-    <div className="grid-container">
+      <BrowserRouter>
+    <div className="grid-container"> 
         <header className="header">
             <div className="brand">
                 <button className="sidebar-" onClick={openmenu}>
                     &#9776;
                 </button>
-                <a href="index.html">Amazona</a>
+                <Link to="/">Amazona</Link>
             </div>
             <div className="header-links">
                 <a href="cart.html">Cart</a>
@@ -34,86 +39,16 @@ function App()
             </ul>
         </aside>
         <main className="main">
-            <div className="content">
-                <ul className="products">
-                <li>
-                    <div className="product">
-                        <img className="product-image" src="/images/s2.jpg" alt="product"/>
-                        <div className="product-name"><a href="product.html">Slim Shirt</a></div>
-                        <div className="product-brand">Nike</div>
-                        <div className="product-price">$60</div>
-                        <div className="product-rating">4.5 Stars(10 reviews)</div>
-                        
-
-                    </div>
-                </li>
-
-                <li>
-                    <div className="product">
-                        <img className="product-image" src="/images/s2.jpg" alt="product"/>
-                        <div className="product-name"><a href="product.html">Slim Shirt</a></div>
-                        <div className="product-brand">Nike</div>
-                        <div className="product-price">$60</div>
-                        <div className="product-rating">4.5 Stars(10 reviews)</div>
-                        
-
-                    </div>
-                </li>
-
-                <li>
-                    <div className="product">
-                        <img className="product-image" src="/images/s2.jpg" alt="product"/>
-                        <div className="product-name"><a href="product.html">Slim Shirt</a></div>
-                        <div className="product-brand">Nike</div>
-                        <div className="product-price">$60</div>
-                        <div className="product-rating">4.5 Stars(10 reviews)</div>
-                        
-
-                    </div>
-                </li>
-
-                <li>
-                    <div className="product">
-                        <img className="product-image" src="/images/s2.jpg" alt="product"/>
-                        <div className="product-name"><a href="product.html">Slim Shirt</a></div>
-                        <div className="product-brand">Nike</div>
-                        <div className="product-price">$60</div>
-                        <div className="product-rating">4.5 Stars(10 reviews)</div>
-                        
-
-                    </div>
-                </li>
-
-                <li>
-                    <div className="product">
-                        <img className="product-image" src="/images/s2.jpg" alt="product"/>
-                        <div className="product-name"><a href="product.html">Slim Shirt</a></div>
-                        <div className="product-brand">Nike</div>
-                        <div className="product-price">$60</div>
-                        <div className="product-rating">4.5 Stars(10 reviews)</div>
-                        
-
-                    </div>
-                </li>
-
-                <li>
-                    <div className="product">
-                        <img className="product-image" src="/images/s2.jpg" alt="product"/>
-                        <div className="product-name"><a href="product.html">Slim Shirt</a></div>
-                        <div className="product-brand">Nike</div>
-                        <div className="product-price">$60</div>
-                        <div className="product-rating">4.5 Stars(10 reviews)</div>
-                        
-
-                    </div>
-                </li>
-                
-                </ul>
+          <div className="content">
+              <Route path ="/products/:id" component= {ProductScreen}/>
+              <Route path="/" exact={true} component = {HomeScreen}/>
+               
             </div>
         </main>
         <footer className="footer">All rights reserved</footer>
     </div>
-  );
+
+  </BrowserRouter>);
 }
 
 export default App;

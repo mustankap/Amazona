@@ -7,6 +7,9 @@ body{
   height:100vh;/*v port height*/
   margin:0;
 }
+#root{
+  height:100%;
+}
 .grid-container
 {
   display:grid;
@@ -25,7 +28,7 @@ color:#ffffff;
 display:flex;
 justify-content: space-between;
 align-items: center;
-padding:0.5rem;
+padding:1rem;
 }
 .brand a{
   color:#ffffff;
@@ -135,4 +138,44 @@ margin-bottom: 1rem;
   position:absolute;
   right: 0.5rem;
   top: 1.5rem;
+}
+/* ProductScreen*/
+.detail{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+.detail-image img{
+  max-width: 60rem;
+  widows: 100%;
+}
+.details-image{
+  flex: 2 1 60rem;
+
+}
+.details-info{
+  flex: 1 1 30rem;
+  
+}
+.details-action{
+  flex: 1 1 30rem;
+  
+}
+.details-info ul,.details-action ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.details-info li,.details-action li{
+  margin-bottom: 1rem;
+}
+.back-to-result{
+padding:1rem;
+}
+.details-action{
+  border: 1rem #808080 solid ;
+  border-radius: 0.5rem;
+  
 }
