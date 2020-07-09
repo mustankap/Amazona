@@ -39,6 +39,8 @@ padding:1rem;
 }
 .header-links a{
   color:#ffffff;
+  justify-content: space-between;
+  padding:1rem;
   text-decoration: none;
 
 }
@@ -140,14 +142,14 @@ margin-bottom: 1rem;
   top: 1.5rem;
 }
 /* ProductScreen*/
-.detail{
+.details{
   display:flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 
 }
-.detail-image img{
+.details-image img{
   max-width: 60rem;
   widows: 100%;
 }
@@ -179,3 +181,4 @@ padding:1rem;
   border-radius: 0.5rem;
   
 }
+/*product details*/

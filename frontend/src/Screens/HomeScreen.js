@@ -9,7 +9,7 @@ function HomeScreen(props)
         <li>
 
         <div className="product">
-            <Link to={'/product/'+product._id}>
+            <Link to={'/products/'+product._id}>
                 <img className="product-image" src={product.image} alt="product"/>
             </Link>
             
