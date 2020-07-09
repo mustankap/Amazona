@@ -147,7 +147,8 @@ margin-bottom: 1rem;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-
+  padding:1rem;
+ 
 }
 .details-image img{
   max-width: 60rem;
@@ -166,19 +167,38 @@ margin-bottom: 1rem;
   
 }
 .details-info ul,.details-action ul{
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .details-info li,.details-action li{
   margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
 }
 .back-to-result{
 padding:1rem;
 }
 .details-action{
-  border: 1rem #808080 solid ;
+  border: 0.1rem #808080 solid ;
   border-radius: 0.5rem;
+  background-color: #f8f8f8;
+  padding:1rem;
+ 
   
 }
-/*product details*/
+
+.iubutton{
+  padding: 1rem;
+  border-radius:0.5rem;
+  border:0.1rem #808080 solid;
+  cursor: pointer;
+  width:100%;
+  text-align:center;
+  background-color: #f0c040;
+  
+}
+.iubutton:hover{
+  border:0.2rem #050200 solid;
+}
+

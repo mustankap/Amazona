@@ -36,7 +36,7 @@ function ProductScreen(props)
                 </ul>
 
             </div>
-            <div className="details-section">
+            <div className="details-action">
             <ul>
                 <li>
                     Price:<b> $ {product.price}</b>
@@ -53,12 +53,12 @@ function ProductScreen(props)
                     </select>
                 </li>
                 <li>
-                    <button>Add to cart</button>
+                    <button className="iubutton">Add to cart</button>
                 </li>
             </ul>
             </div>
         </div>
-        <h1>{product.name}</h1>
+        
     </div>
 }
 
