@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from './node_modules/react';
 //import data from '../data';
-import {Link} from 'react-router-dom';
-import axios from 'axios';
+import {Link} from './node_modules/react-router-dom';
+import axios from './node_modules/axios';
 function HomeScreen(props)
 {
     const [products,setProduct]=useState([]);
